@@ -52,7 +52,8 @@ Vue.use(VueAnalytics, {
   globalMetrics: [ // Optional
       {metric: 1, value: 'MyMetricValue'},
       {metric: 2, value: 'AnotherMetricValue'}
-    ]
+    ],
+  googleOptimizeContainerID: 'GTM-XXXXXX', // Optional, For Initializing Google Optimize With Google Analytics
 })
 ```
 

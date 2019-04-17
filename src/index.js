@@ -35,6 +35,11 @@ const install = function (Vue, initConf = {}) {
   // register tracker
   ga('create', initConf.trackingId, 'auto', initConf.createOptions)
 
+  // register google optimize if config exists
+  if (initConf.googleOptimizeContainerID) {
+    ga('require', initConf.googleOptimizeContainerID)
+  }
+
   // set app name and version
   ga('set', 'appName', initConf.appName)
   ga('set', 'appVersion', initConf.appVersion)
